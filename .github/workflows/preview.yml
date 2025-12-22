@@ -23,6 +23,11 @@ jobs:
                 "chartPath": "bitnami/wordpress"
               },
               "values": {
+                "image": {
+                  "registry": "docker.io",
+                  "repository": "bitnami/wordpress",
+                  "digest": "sha256:eb2233bf992e52d2d0390b3922e9b5a8045ccca34dc17ca8131c1c8e628f8c1e"
+                },
                 "service": {
                   "type": "ClusterIP"
                 },
@@ -34,6 +39,11 @@ jobs:
                   "enabled": false
                 },
                 "mariadb": {
+                  "image": {
+                    "registry": "docker.io",
+                    "repository": "bitnami/mariadb",
+                    "digest": "sha256:75f4df00065c2bf05f391ef593882f0dbe03b4497b44b3520191c35b2c464e7a"
+                  },
                   "primary": {
                     "persistence": {
                       "enabled": false
